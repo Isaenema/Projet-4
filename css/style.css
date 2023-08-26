@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -13,6 +14,19 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  color: black;
+}
+
+h4 {
+  color: black;
+}
+
+/* HEADER */
 header {
   display: flex;
   justify-content: center;
@@ -23,6 +37,7 @@ header img {
   width: 180px;
 }
 
+/* SECTION explorer */
 .mainSection {
   background-color: var(--section-color);
   padding-bottom: 55px;
@@ -72,7 +87,6 @@ header img {
 
 .marginSection {
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .btnfuchia {
@@ -91,6 +105,7 @@ header img {
   border-radius: 24px;
 }
 
+/* SECTION explication */
 .otherSection {
   margin: 20px;
   margin-top: 52px;
@@ -113,6 +128,10 @@ header img {
   margin-right: 222px;
 }
 
+/* SECTION restaurant */
+.restaurant {
+  margin-top: 60px;
+}
 .restaurant h2 {
   padding-top: 36px;
   margin-left: 18px;
@@ -131,4 +150,65 @@ header img {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.card .card-txt {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-txt .titleIcon h4 {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.card .card-txt .titleIcon p {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.card .card-txt i {
+  padding-top: 25px;
+  padding-right: 25px;
+  color: black;
+}
+.card .card-txt i:active {
+  color: #9356DC;
+  pointer-events: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: #353535;
+  padding: 20px;
+}
+footer .footer__content {
+  color: white;
+}
+footer .footer__content h4 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+footer .footer__content p {
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 7px;
+  font-weight: bold;
+}
+footer .footer__content_sous-titre {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+footer .footer__content_sous-titre .margeIcon {
+  margin-left: 11px;
+}
+footer .footer__content_sous-titre p {
+  margin-left: 7px;
+  margin-top: 0;
+}
+footer .footer__content_sous-titre .fa-handshake {
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */

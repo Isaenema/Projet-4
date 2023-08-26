@@ -1,0 +1,109 @@
+@media (min-width: 767.98px) {
+
+/* GENERAL */
+  
+
+.otherSection {
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h2 {
+        margin-left: 25px;
+        margin-bottom: 35px;
+    }
+
+        /* SECTION fonctionnement */
+
+.fonctionnement__direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    .bulle {
+
+        width: 30%;
+    }
+}
+}
+
+        /* SECTION restaurant */
+
+.restaurant {
+
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h2 {
+
+        padding-left: 25px;
+
+    }
+
+
+    .restaurant__direction-card {
+
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        width: 100%;
+
+        .card {
+            width: 43%;
+        }
+    }
+}
+
+            /* FOOTER */
+            
+        footer {
+
+            padding: 40px;
+            padding-top: 50px;
+            padding-bottom: 25px;
+
+            .footer__content {
+
+                display: flex;
+                flex-direction: row-reverse;
+
+                .footer__content_titre {
+
+                    display: flex;
+                    justify-content: end;
+
+                    h4 {
+                        margin-bottom: 0;
+                
+                    }
+                }
+
+                .footer__content_groupe {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: end;
+                    margin-right: 65px;
+
+
+
+                }
+ 
+                .footer__content_sous-groupe {
+                    display: flex;
+                    flex-direction: row;
+                    margin-right: 25px;
+                }
+
+                p {
+
+                    margin-right: 15px;
+                }
+
+            
+            }
+        }
+
+}
