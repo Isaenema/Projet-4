@@ -32,6 +32,12 @@
   }
   .otherSection .fonctionnement__direction .bulle {
     width: 30%;
+    z-index: 1;
+  }
+  .otherSection .fonctionnement__direction .btnfuchia {
+    position: inherit;
+    margin-right: -55px;
+    z-index: 2;
   }
   /* SECTION restaurant */
   .restaurant {

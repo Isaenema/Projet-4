@@ -40,6 +40,13 @@
 
       .bulle {
         width: 30%;
+        z-index: 1;
+      }
+
+      .btnfuchia {
+        position: inherit;
+        margin-right: -55px;
+        z-index: 2;
       }
     }
   }
