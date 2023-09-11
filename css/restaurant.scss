@@ -118,8 +118,29 @@ header {
       white-space: nowrap;
     }
 
-    i {
-      margin-right: 26px;
+    .hearts {
+      margin: 0;
+      .hearttwo {
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+          transition-duration: 800ms;
+          color: rgb(147, 86, 220);
+          color: linear-gradient(
+            0deg,
+            rgba(147, 86, 220, 1) 0%,
+            rgba(255, 121, 218, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          cursor: pointer;
+        }
+      }
+
+      i {
+        margin-left: -50px;
+        position: absolute;
+      }
     }
   }
 
@@ -182,14 +203,14 @@ header {
       .box__verte {
         background-color: #99e2d0;
         width: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         display: none;
 
         .box__verte__check {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 20px;
           height: 20px;
           border: 0;
@@ -203,8 +224,10 @@ header {
       }
     }
   }
-  .card:focus .box__verte {
-    display: block;
+  .card:hover .box__verte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
