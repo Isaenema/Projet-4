@@ -21,10 +21,16 @@ a {
 
 p {
   color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 h4 {
   color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* HEADER */
@@ -94,6 +100,9 @@ header img {
   font-family: "Roboto", sans-serif;
   font-family: "Shrikhand", cursive;
   font-size: 26px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .section__menu .title__icon i {
   margin-right: 26px;
@@ -111,23 +120,58 @@ header img {
 .section__menu .card {
   background-color: white;
   border-radius: 20px;
-  padding: 10px;
   margin: 10px;
   box-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  display: flex;
+  flex-direction: row;
 }
-.section__menu .card h4 {
+.section__menu .card .card__content {
+  padding: 10px;
+}
+.section__menu .card .card__content h4 {
   margin: 0;
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.section__menu .card .card__text {
+.section__menu .card .card__content .card__text {
   display: flex;
   justify-content: space-between;
 }
-.section__menu .card .card__text p {
+.section__menu .card .card__content .card__text p {
   margin: 0;
   font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section__menu .card .box {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.section__menu .card .box .box__verte {
+  background-color: #99E2D0;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+}
+.section__menu .card .box .box__verte button {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 20px;
+  background-color: white;
+}
+.section__menu .card .box .box__verte button i {
+  color: #99E2D0;
 }
 
 /* FOOTER */

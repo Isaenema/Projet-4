@@ -22,10 +22,16 @@ a {
 
 p {
   color: black;
+  text-overflow: ellipsis;
+      overflow: hidden; 
+      white-space: nowrap;
 }
 
 h4 {
   color: black;
+  text-overflow: ellipsis;
+      overflow: hidden; 
+      white-space: nowrap;
 }
 
 /* HEADER */
@@ -107,6 +113,9 @@ header {
       font-family: "Roboto", sans-serif;
       font-family: "Shrikhand", cursive;
       font-size: 26px;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+      white-space: nowrap;
     }
 
     i {
@@ -130,26 +139,72 @@ header {
   .card {
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
     margin: 10px;
     box-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: row;
+
+    .card__content {
+
+    padding: 10px;
 
     h4 {
       margin: 0;
       margin-bottom: 5px;
       font-size: 16px;
       font-weight: bold;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+      white-space: nowrap;
     }
 
     .card__text {
       display: flex;
       justify-content: space-between;
+      
 
       p {
         margin: 0;
         font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;  
+        white-space: nowrap;
+      }
+
+    }
+  }
+
+  .box {
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+
+    .box__verte {
+      background-color: #99E2D0;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: none;
+
+
+      button {
+        width: 20px;
+        height: 20px;
+        border: 0;
+        border-radius: 20px;
+        background-color: white;
+
+        i {
+          color: #99E2D0;
+        }
       }
     }
+  }
   }
 }
 
