@@ -163,6 +163,40 @@ header img {
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  /* .link__heart {
+    i {
+      padding-top: 25px;
+      padding-right: 25px;
+      color: black;
+      z-index: 3;
+      &:hover {
+        color: #9356dc;
+        background-color: #9356dc;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+    }
+  }*/
+  /*
+  .fa-heart {
+    padding-top: 25px;
+    padding-right: 25px;
+    color: black;
+    padding: 0.2em;
+    z-index: 3;
+
+    .fa-heart:hover::before {
+      transition-duration: 800ms;
+      font-weight: bold;
+      color: rgb(147, 86, 220);
+      color: linear-gradient(
+        0deg,
+        rgba(146, 86, 220, 0.912) 0%,
+        rgba(255, 121, 217, 0.914) 100%
+      );
+      cursor: pointer;
+    }
+  }*/
 }
 .card .card-txt .titleIcon h4 {
   margin-top: 8px;
@@ -172,15 +206,23 @@ header img {
   margin-top: 8px;
   margin-bottom: 5px;
 }
-.card .card-txt i {
-  padding-top: 25px;
-  padding-right: 25px;
-  color: black;
-  z-index: 1;
-  transition-duration: 500ms;
+.card .card-txt .hearts {
+  margin-top: 26px;
 }
-.card .card-txt i:hover {
-  color: #9356dc;
+.card .card-txt .hearts .hearttwo {
+  opacity: 0;
+}
+.card .card-txt .hearts .hearttwo:hover {
+  opacity: 1;
+  transition-duration: 800ms;
+  color: rgb(147, 86, 220);
+  color: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.card .card-txt .hearts i {
+  margin-left: -50px;
+  position: absolute;
 }
 
 /* FOOTER */

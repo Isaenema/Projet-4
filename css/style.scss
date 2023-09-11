@@ -198,17 +198,64 @@ header {
         margin-bottom: 5px;
       }
     }
+    .hearts {
+      margin-top: 26px;
 
-    i {
+      .hearttwo {
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+          transition-duration: 800ms;
+          color: rgb(147, 86, 220);
+          color: linear-gradient(
+            0deg,
+            rgba(147, 86, 220, 1) 0%,
+            rgba(255, 121, 218, 1) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+        }
+      }
+
+      i {
+        margin-left: -50px;
+        position: absolute;
+      }
+    }
+    /* .link__heart {
+      i {
+        padding-top: 25px;
+        padding-right: 25px;
+        color: black;
+        z-index: 3;
+        &:hover {
+          color: #9356dc;
+          background-color: #9356dc;
+          background-clip: text;
+          -webkit-background-clip: text;
+        }
+      }
+    }*/
+    /*
+    .fa-heart {
       padding-top: 25px;
       padding-right: 25px;
       color: black;
-      z-index: 1;
-      transition-duration: 500ms;
-      &:hover {
-        color: #9356dc;
+      padding: 0.2em;
+      z-index: 3;
+
+      .fa-heart:hover::before {
+        transition-duration: 800ms;
+        font-weight: bold;
+        color: rgb(147, 86, 220);
+        color: linear-gradient(
+          0deg,
+          rgba(146, 86, 220, 0.912) 0%,
+          rgba(255, 121, 217, 0.914) 100%
+        );
+        cursor: pointer;
       }
-    }
+    }*/
   }
 }
 
