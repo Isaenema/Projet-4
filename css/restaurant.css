@@ -133,9 +133,6 @@ header img {
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: bold;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .section__menu .card .card__content .card__text {
   display: flex;
@@ -144,14 +141,18 @@ header img {
 .section__menu .card .card__content .card__text p {
   margin: 0;
   font-size: 14px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .section__menu .card .box {
   width: 100%;
   display: flex;
   justify-content: end;
+}
+.section__menu .card .box p {
+  margin: 0;
+  padding-right: 12px;
+  padding-top: 32px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .section__menu .card .box .box__verte {
   background-color: #99e2d0;
@@ -163,15 +164,18 @@ header img {
   border-bottom-right-radius: 20px;
   display: none;
 }
-.section__menu .card .box .box__verte button {
+.section__menu .card .box .box__verte .box__verte__check {
   width: 20px;
   height: 20px;
   border: 0;
   border-radius: 20px;
   background-color: white;
 }
-.section__menu .card .box .box__verte button i {
+.section__menu .card .box .box__verte .box__verte__check i {
   color: #99e2d0;
+}
+.section__menu .card:focus .box__verte {
+  display: block;
 }
 
 /* FOOTER */

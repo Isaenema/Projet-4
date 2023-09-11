@@ -21,10 +21,23 @@ a {
 
 p {
   color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-h4 {
+h4,
+h3 {
   color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nowrap {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* HEADER */
@@ -51,12 +64,6 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--localisation);
-
-    p {
-      margin-left: 15px;
-      font-size: 14px;
-      font-weight: 700;
-    }
   }
 
   .section__explorer {
@@ -73,6 +80,12 @@ header {
       padding-left: 20px;
       padding-right: 20px;
       margin-bottom: 0px;
+      text-align: center;
+    }
+    h2 {
+      margin-left: 15px;
+      font-size: 18px;
+      font-weight: 300;
       text-align: center;
     }
 

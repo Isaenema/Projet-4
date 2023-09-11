@@ -136,6 +136,7 @@ header {
       }
     }
   }
+
   .card {
     background-color: white;
     border-radius: 20px;
@@ -152,9 +153,6 @@ header {
         margin-bottom: 5px;
         font-size: 16px;
         font-weight: bold;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
       }
 
       .card__text {
@@ -164,9 +162,6 @@ header {
         p {
           margin: 0;
           font-size: 14px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
         }
       }
     }
@@ -175,6 +170,14 @@ header {
       width: 100%;
       display: flex;
       justify-content: end;
+
+      p {
+        margin: 0;
+        padding-right: 12px;
+        padding-top: 32px;
+        font-size: 14px;
+        font-weight: bold;
+      }
 
       .box__verte {
         background-color: #99e2d0;
@@ -186,7 +189,7 @@ header {
         border-bottom-right-radius: 20px;
         display: none;
 
-        button {
+        .box__verte__check {
           width: 20px;
           height: 20px;
           border: 0;
@@ -199,6 +202,9 @@ header {
         }
       }
     }
+  }
+  .card:focus .box__verte {
+    display: block;
   }
 }
 

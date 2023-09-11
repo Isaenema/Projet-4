@@ -20,10 +20,23 @@ a {
 
 p {
   color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-h4 {
+h4,
+h3 {
   color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nowrap {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* HEADER */
@@ -48,11 +61,6 @@ header img {
   align-items: center;
   background-color: var(--localisation);
 }
-.mainSection .section__grey p {
-  margin-left: 15px;
-  font-size: 14px;
-  font-weight: 700;
-}
 .mainSection .section__explorer {
   display: flex;
   flex-direction: column;
@@ -67,6 +75,12 @@ header img {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 0px;
+  text-align: center;
+}
+.mainSection .section__explorer h2 {
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 300;
   text-align: center;
 }
 .mainSection .section__explorer p {
