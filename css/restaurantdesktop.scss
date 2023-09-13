@@ -10,13 +10,13 @@
     margin-right: 50px;
     padding-left: 70px;
     padding-right: 70px;
-    
-      .hearts {
-        padding-left: 30px;
-        position: relative;
-      }
+
+    .hearts {
+      padding-left: 30px;
+      position: relative;
     }
   }
+
   footer {
     padding: 40px;
     padding-top: 50px;
@@ -57,8 +57,8 @@
 }
 
 @media (min-width: 1024px) {
-  header img {
-    width: 300px;
+  .logo {
+    width: 220px;
   }
 
   .section__menu {

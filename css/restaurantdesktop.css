@@ -11,10 +11,7 @@
     padding-left: 70px;
     padding-right: 70px;
   }
-  .section__menu .title__icon {
-    justify-content: center;
-  }
-  .section__menu .title__icon .hearts {
+  .section__menu .hearts {
     padding-left: 30px;
     position: relative;
   }
@@ -51,8 +48,8 @@
   }
 }
 @media (min-width: 1024px) {
-  header img {
-    width: 300px;
+  .logo {
+    width: 220px;
   }
   .section__menu {
     margin-left: 100px;

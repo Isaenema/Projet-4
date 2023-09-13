@@ -35,7 +35,6 @@ h4 {
 
 /* HEADER */
 header {
-  width: 100%;
   display: flex;
   align-items: center;
   padding: 8px;
@@ -44,6 +43,10 @@ header {
 header .header__arrow {
   padding-bottom: 7px;
   padding-left: 7px;
+}
+header .header__arrow a {
+  text-decoration: none;
+  color: black;
 }
 header .header__logo {
   width: 99%;
@@ -153,6 +156,10 @@ header .header__logo img {
 }
 .section__menu .card .card__content {
   padding: 10px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .section__menu .card .card__content h4 {
   margin: 0;
@@ -169,7 +176,6 @@ header .header__logo img {
   font-size: 14px;
 }
 .section__menu .card .box {
-  width: 100%;
   display: flex;
   justify-content: end;
 }

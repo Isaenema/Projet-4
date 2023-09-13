@@ -28,27 +28,6 @@
       margin-left: 25px;
       margin-bottom: 35px;
     }
-
-    /* SECTION fonctionnement */
-
-    .fonctionnement__direction {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 96%;
-      margin-left: 26px;
-
-      .bulle {
-        width: 30%;
-        z-index: 1;
-      }
-
-      .btnfuchia {
-        position: inherit;
-        margin-right: -55px;
-        z-index: 2;
-      }
-    }
   }
 
   /* SECTION restaurant */
@@ -112,6 +91,26 @@
 
       p {
         margin-right: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  /* SECTION fonctionnement */
+
+  .fonctionnement__direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 96%;
+    margin-left: 26px;
+
+    .bulle {
+      width: 30%;
+      z-index: 1;
+
+      .box__text p {
+        padding: 0;
       }
     }
   }

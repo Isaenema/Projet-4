@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
@@ -110,22 +111,6 @@ header img {
   margin-top: 30px;
 }
 
-.btnfuchia {
-  position: absolute;
-  margin-top: 25px;
-  margin-left: -10px;
-  background-color: #9356dc;
-  border: 0px;
-  color: white;
-  font-weight: 1000;
-  height: 24px;
-  width: 24px;
-  padding: 4px;
-  font-weight: bold;
-  border: solid 1px;
-  border-radius: 24px;
-}
-
 /* SECTION explication */
 .otherSection {
   margin: 20px;
@@ -139,14 +124,43 @@ header img {
   width: 100%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 14px;
   font-weight: 1000;
 }
-.otherSection .bulle i {
-  position: absolute;
-  margin-right: 222px;
+.otherSection .bulle .box__btnfuchia {
+  margin-left: -12px;
+}
+.otherSection .bulle .box__btnfuchia .btnfuchia {
+  background-color: #9356dc;
+  border: 0px;
+  color: white;
+  font-weight: 1000;
+  height: 24px;
+  width: 24px;
+  padding: 4px;
+  font-weight: bold;
+  border: solid 1px;
+  border-radius: 24px;
+}
+.otherSection .bulle .box__icon {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+.otherSection .bulle .box__icon i {
+  color: grey;
+}
+.otherSection .bulle .box__icon .fa-store {
+  color: #9356dc;
+}
+.otherSection .bulle .box__text {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+.otherSection .bulle .box__text p {
+  margin-right: 50px;
 }
 
 /* SECTION restaurant */
