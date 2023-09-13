@@ -10,12 +10,10 @@
     margin-right: 50px;
     padding-left: 70px;
     padding-right: 70px;
-
-    .title__icon {
-      justify-content: center;
-
-      h1 {
-        margin-right: 40px;
+    
+      .hearts {
+        padding-left: 30px;
+        position: relative;
       }
     }
   }
@@ -60,7 +58,7 @@
 
 @media (min-width: 1024px) {
   header img {
-    width: 210px;
+    width: 300px;
   }
 
   .section__menu {

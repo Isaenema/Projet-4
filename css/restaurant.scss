@@ -37,13 +37,26 @@ h4 {
 /* HEADER */
 
 header {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding: 8px;
-  padding-top: 21px;
+  padding-top: 18px;
 
-  img {
-    width: 180px;
+  .header__arrow {
+    padding-bottom: 7px;
+    padding-left: 7px;
+  }
+
+  .header__logo {
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 180px;
+    }
   }
 }
 
@@ -104,10 +117,9 @@ header {
   .title__icon {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-left: 16px;
-    margin-right: 10px;
+    justify-content: center;
+    padding-right: 20px;
 
     h1 {
       font-family: "Roboto", sans-serif;
@@ -119,7 +131,8 @@ header {
     }
 
     .hearts {
-      margin: 0;
+      padding-left: 15px;
+      position: relative;
       .hearttwo {
         opacity: 0;
         &:hover {
@@ -138,7 +151,6 @@ header {
       }
 
       i {
-        margin-left: -50px;
         position: absolute;
       }
     }

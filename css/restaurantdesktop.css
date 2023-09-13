@@ -14,8 +14,9 @@
   .section__menu .title__icon {
     justify-content: center;
   }
-  .section__menu .title__icon h1 {
-    margin-right: 40px;
+  .section__menu .title__icon .hearts {
+    padding-left: 30px;
+    position: relative;
   }
   footer {
     padding: 40px;
@@ -51,7 +52,7 @@
 }
 @media (min-width: 1024px) {
   header img {
-    width: 210px;
+    width: 300px;
   }
   .section__menu {
     margin-left: 100px;

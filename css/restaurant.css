@@ -35,12 +35,23 @@ h4 {
 
 /* HEADER */
 header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  padding-top: 18px;
+}
+header .header__arrow {
+  padding-bottom: 7px;
+  padding-left: 7px;
+}
+header .header__logo {
+  width: 99%;
   display: flex;
   justify-content: center;
-  padding: 8px;
-  padding-top: 21px;
+  align-items: center;
 }
-header img {
+header .header__logo img {
   width: 180px;
 }
 
@@ -91,10 +102,9 @@ header img {
 .section__menu .title__icon {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 16px;
-  margin-right: 10px;
+  justify-content: center;
+  padding-right: 20px;
 }
 .section__menu .title__icon h1 {
   font-family: "Roboto", sans-serif;
@@ -105,7 +115,8 @@ header img {
   white-space: nowrap;
 }
 .section__menu .title__icon .hearts {
-  margin: 0;
+  padding-left: 15px;
+  position: relative;
 }
 .section__menu .title__icon .hearts .hearttwo {
   opacity: 0;
@@ -120,7 +131,6 @@ header img {
   cursor: pointer;
 }
 .section__menu .title__icon .hearts i {
-  margin-left: -50px;
   position: absolute;
 }
 .section__menu .menu .menu__title {
