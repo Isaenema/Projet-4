@@ -62,6 +62,9 @@ header img {
   align-items: center;
   background-color: var(--localisation);
 }
+.mainSection .section__grey p {
+  padding-left: 10px;
+}
 .mainSection .section__explorer {
   display: flex;
   flex-direction: column;
@@ -69,6 +72,7 @@ header img {
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 22px;
 }
 .mainSection .section__explorer h1 {
   font-size: 23px;
@@ -79,10 +83,10 @@ header img {
   text-align: center;
 }
 .mainSection .section__explorer h2 {
-  margin-left: 15px;
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  margin-bottom: 23px;
 }
 .mainSection .section__explorer p {
   text-align: center;
@@ -124,9 +128,10 @@ header img {
   width: 100%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
+  justify-content: space-around;
   align-items: center;
   font-size: 14px;
-  font-weight: 1000;
+  font-weight: bold;
 }
 .otherSection .bulle .box__btnfuchia {
   margin-left: -12px;
@@ -144,7 +149,7 @@ header img {
   border-radius: 24px;
 }
 .otherSection .bulle .box__icon {
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: center;
 }
@@ -155,12 +160,7 @@ header img {
   color: #9356dc;
 }
 .otherSection .bulle .box__text {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-}
-.otherSection .bulle .box__text p {
-  margin-right: 50px;
+  width: 70%;
 }
 
 /* SECTION restaurant */

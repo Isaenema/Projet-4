@@ -65,6 +65,10 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--localisation);
+
+    p {
+      padding-left: 10px;
+    }
   }
 
   .section__explorer {
@@ -74,6 +78,7 @@ header {
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 22px;
 
     h1 {
       font-size: 23px;
@@ -84,10 +89,10 @@ header {
       text-align: center;
     }
     h2 {
-      margin-left: 15px;
       font-size: 18px;
       font-weight: 300;
       text-align: center;
+      margin-bottom: 23px;
     }
 
     p {
@@ -142,10 +147,10 @@ header {
     width: 100%;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     display: flex;
-
+    justify-content: space-around;
     align-items: center;
     font-size: 14px;
-    font-weight: 1000;
+    font-weight: bold;
 
     .box__btnfuchia {
       margin-left: -12px;
@@ -164,7 +169,7 @@ header {
     }
 
     .box__icon {
-      width: 25%;
+      width: 30%;
       display: flex;
       justify-content: center;
       i {
@@ -176,13 +181,7 @@ header {
     }
 
     .box__text {
-      width: 75%;
-      display: flex;
-      justify-content: center;
-
-      p {
-        margin-right: 50px;
-      }
+      width: 70%;
     }
   }
 }
