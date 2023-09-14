@@ -140,6 +140,7 @@ header {
 
       .hearttwo {
         opacity: 0;
+        transition-duration: 1400ms;
         &:hover {
           opacity: 1;
           transition-duration: 800ms;
@@ -162,8 +163,7 @@ header {
   }
 
   .menu {
-    transform-origin: left;
-
+    /* display: none;*/
     .menu__title {
       margin-left: 10px;
       border-bottom: var(--green) 2px solid;
@@ -218,7 +218,7 @@ header {
       }
     }
 
-    .box {
+    /*.box {
       display: flex;
       justify-content: end;
       transform: scale(0.1);
@@ -261,9 +261,54 @@ header {
           }
         }
       }
+    }*/
+    .card__price {
+      p {
+        margin: 0;
+        padding-right: 12px;
+        padding-top: 32px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .box {
+      display: flex;
+      justify-content: end;
+
+      .box__verte {
+        background-color: #99e2d0;
+        width: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: width;
+        transition-duration: 400ms;
+
+        .box__verte__check {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          width: 0px;
+          height: 0px;
+          border: 0;
+          border-radius: 0px;
+          font-size: 0;
+          padding: 0;
+          background-color: white;
+          transition-property: width, height, font-size, border-radius;
+          transition-duration: 700ms;
+
+          i {
+            color: #99e2d0;
+          }
+        }
+      }
     }
   }
-  .card:hover .box {
+  /*.card:hover .box {
     display: flex;
     transform: scale(1);
 
@@ -271,6 +316,35 @@ header {
       display: flex;
       align-items: center;
       transform: translateX(0%);
+    }
+  }*/
+
+  .card:hover {
+    display: flex;
+
+    .box__verte {
+      display: flex;
+      align-items: center;
+      width: 60px;
+      transition-property: width;
+      transition-duration: 1s;
+
+      .box__verte__check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        border: 0;
+        border-radius: 20px;
+        font-size: 12px;
+        background-color: white;
+
+        i {
+          color: #99e2d0;
+        }
+      }
     }
   }
 }
