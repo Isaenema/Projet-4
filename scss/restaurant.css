@@ -83,13 +83,14 @@ header .header__logo img {
   font-size: 14px;
   font-weight: 1000;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  transition-duration: 500ms;
+  transition-duration: 1000ms;
 }
 .btn__commander button:hover {
   cursor: pointer;
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgba(146, 86, 220, 0.912) 0%, rgba(255, 121, 217, 0.914) 100%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.424);
+  transition-duration: 800ms;
 }
 
 /* SECTION MENU */

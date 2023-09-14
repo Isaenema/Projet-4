@@ -114,7 +114,7 @@ header {
       font-size: 14px;
       font-weight: 1000;
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-      transition-duration: 500ms;
+      transition-duration: 800ms;
       &:hover {
         cursor: pointer;
         background: rgb(147, 86, 220);
@@ -123,7 +123,8 @@ header {
           rgba(146, 86, 220, 0.912) 0%,
           rgba(255, 121, 217, 0.914) 100%
         );
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.424);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+        transition-duration: 800ms;
       }
     }
   }
@@ -201,8 +202,29 @@ header {
   background-color: white;
   border-radius: 20px;
   margin: 13px;
-  box-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
 
+  .nouveau {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    button {
+      background-color: #95dfcd;
+      color: #008766;
+      position: absolute;
+      width: 80px;
+      height: 29px;
+      margin-top: 14px;
+      margin-right: 14px;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 7px 10px;
+      text-align: center;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
   img {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -233,6 +255,7 @@ header {
 
       .hearttwo {
         opacity: 0;
+        transition-duration: 1400ms;
         &:hover {
           opacity: 1;
           transition-duration: 800ms;
