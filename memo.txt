@@ -1,2 +1,0 @@
-btn fuchia 1 2 3 a mettre en div margin neg
-refaire decalage de l'icone localisation avant Paris

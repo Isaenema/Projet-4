@@ -304,4 +304,7 @@ footer .footer__content_sous-titre p {
 }
 footer .footer__content_sous-titre .fa-handshake {
   transform: rotate(-45deg);
+}
+footer .footer__content_contact {
+  display: flex;
 }/*# sourceMappingURL=restaurant.css.map */
