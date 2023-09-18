@@ -145,7 +145,6 @@ header .header__logo img {
   opacity: 1;
   transition-duration: 800ms;
   color: rgb(147, 86, 220);
-  color: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   cursor: pointer;
@@ -179,7 +178,6 @@ header .header__logo img {
   background-color: white;
   border-radius: 20px;
   margin: 10px;
-  box-shadow: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   display: flex;
   flex-direction: row;
 }
