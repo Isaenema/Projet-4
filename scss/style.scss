@@ -11,6 +11,15 @@
   --fuchiabtn: #9356dc;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -179,14 +188,14 @@ header {
       i {
         color: grey;
       }
-      .fa-store {
-        color: #9356dc;
-      }
     }
 
     .box__text {
       width: 70%;
     }
+  }
+  .bulle:hover i {
+    color: #9356dc;
   }
 }
 
@@ -273,40 +282,6 @@ header {
         position: absolute;
       }
     }
-    /* .link__heart {
-      i {
-        padding-top: 25px;
-        padding-right: 25px;
-        color: black;
-        z-index: 3;
-        &:hover {
-          color: #9356dc;
-          background-color: #9356dc;
-          background-clip: text;
-          -webkit-background-clip: text;
-        }
-      }
-    }*/
-    /*
-    .fa-heart {
-      padding-top: 25px;
-      padding-right: 25px;
-      color: black;
-      padding: 0.2em;
-      z-index: 3;
-
-      .fa-heart:hover::before {
-        transition-duration: 800ms;
-        font-weight: bold;
-        color: rgb(147, 86, 220);
-        color: linear-gradient(
-          0deg,
-          rgba(146, 86, 220, 0.912) 0%,
-          rgba(255, 121, 217, 0.914) 100%
-        );
-        cursor: pointer;
-      }
-    }*/
   }
 }
 
@@ -367,13 +342,32 @@ footer {
   left: 0;
   width: 100%;
   background-color: black;
-  z-index: 5;
-  opacity: 0.5;
+  z-index: 3;
+  opacity: 0.7;
+  opacity: 0;
+  pointer-events: none;
+  animation: apparition 3s;
 
   .text {
     display: flex;
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    height: 100vh;
+
+    i {
+      font-size: 50px;
+      border-radius: 50%;
+      background: linear-gradient(
+        0deg,
+        rgba(147, 86, 220, 1) 0%,
+        rgba(255, 121, 218, 1) 100%
+      );
+    }
+    p {
+      color: white;
+    }
   }
 }
