@@ -307,4 +307,5 @@ footer .footer__content_sous-titre .fa-handshake {
 }
 footer .footer__content_contact {
   display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=restaurant.css.map */

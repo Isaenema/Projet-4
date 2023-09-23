@@ -5,6 +5,10 @@
   }
 }
 @media (min-width: 767.98px) {
+  header img {
+    width: 220px !important;
+  }
+
   .section__menu {
     margin-left: 50px;
     margin-right: 50px;
@@ -41,6 +45,10 @@
         align-items: center;
         justify-content: end;
         margin-right: 65px;
+
+        .footer__content_contact {
+          flex-direction: row;
+        }
       }
 
       .footer__content_sous-groupe {
