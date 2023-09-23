@@ -81,6 +81,10 @@
         align-items: center;
         justify-content: end;
         margin-right: 65px;
+
+        .footer__content_contact {
+          flex-direction: row;
+        }
       }
 
       .footer__content_sous-groupe {
@@ -112,6 +116,13 @@
       .box__text p {
         padding: 0;
       }
+    }
+  }
+  .loader .text {
+    font-size: 40px;
+
+    i {
+      font-size: 50px;
     }
   }
 }
