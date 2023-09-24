@@ -59,7 +59,7 @@ header img {
   width: 180px;
 }
 
-/* SECTION explorer */
+/* SECTION localisation */
 .mainSection {
   background-color: var(--section-color);
   padding-bottom: 55px;
@@ -124,7 +124,7 @@ header img {
   margin-top: 30px;
 }
 
-/* SECTION explication */
+/* SECTION explorer */
 .otherSection {
   margin: 20px;
   margin-top: 52px;
